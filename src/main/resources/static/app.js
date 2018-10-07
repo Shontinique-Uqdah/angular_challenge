@@ -2,7 +2,7 @@ angular.module('challenge', ['ngAnimate', 'ui.bootstrap']);
 
 angular.module('challenge')
 .controller('Users', function($scope, $http) {
-    $http.get('http://localhost:8080/user').
+    $http.get('http://localhost:8080/users').
         then(function(response) {
             $scope.users = response.data;
         });
